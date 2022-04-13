@@ -11,7 +11,7 @@ import (
 )
 
 var (
-    Version = 'myapp v0.1.0dev"
+    Version = `myapp v0.1.0dev`
 )
 
 func init() {
