@@ -1,7 +1,6 @@
 # runp
 
-This package help capture information about the run environment.
-It can also be used to log that information.
+This package helps capture information about the run environment.
 
 ```
 package main
@@ -10,13 +9,12 @@ import (
     "github.com/grendeloz/runp"
 )
 
-var (
-    Version = `myapp v0.1.0dev`
-)
+var MyRp runp.RunParameters
 
 func init() {
-    runp.SetVersion(Version)
-    myRp := runp.NewRunParameters()
+    runp.SetTool(`myapp`)
+    runp.SetVersion(`v0.1.0dev`)
+    MyRp = runp.NewRunParameters()
 }
 
 func main() {
